@@ -83,6 +83,8 @@ const handleSubmit = async (e) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST",
     },
     body: JSON.stringify({
       prompt: data.get("prompt"),
