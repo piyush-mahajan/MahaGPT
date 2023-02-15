@@ -4,6 +4,7 @@ import cors from "cors";
 import { Configuration, OpenAIApi } from "openai";
 
 dotenv.config();
+const app = express();
 app.use(
   cors({
     origin: "https://maha-gpt.vercel.app",
@@ -15,7 +16,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const app = express();
+
 
 app.use(express.json());
 
