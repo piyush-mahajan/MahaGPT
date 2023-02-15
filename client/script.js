@@ -72,7 +72,7 @@ const handleSubmit = async (e) => {
   const messageDiv = document.getElementById(uniqueId);
 
   loader(messageDiv);
-  const response = await fetch("https://mahagpt.onrender.com/", {
+  const response = await fetch("https://mahagpt.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
